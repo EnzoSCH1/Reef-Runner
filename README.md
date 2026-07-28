@@ -1,16 +1,38 @@
-# Reef Runner
+<p align="center">
+  <img src="gamefishbanner.png" alt="GameFish Banner" width="100%">
+</p>
 
-Jeu web 2D en JavaScript (DOM) avec boucles d’animation temps réel, événements dynamiques et persistance locale/cloud. Projet optimisé pour desktop et mobile.
+<h1 align="center">🐟 Reef Runner</h1>
 
-## Fonctionnalités
-- **Gameplay temps réel** : suivi du curseur, dash, aimant, boss, ennemis et particules de feedback.
-- **Modes de jeu** : Normal, Endless, Time Attack.
-- **Événements aléatoires** : tempête, soif de sang, marée, plancton lumineux, eau trouble, attaque surprise.
-- **Skins & Aquarium** : boutique, badges NEW, équipement, raretés.
-- **Options avancées** : multiplicateur de vitesse du boss, temps, toggles visuels (parallaxe, caustiques, swimmers).
-- **Mobile** : joystick virtuel, HUD adaptatif, perf réduite.
+<p align="center">
+  <strong>Eat. Grow. Survive.</strong>
+</p>
 
-## Stack technique
+<p align="center">
+Become the king of the ocean by evolving through every stage of marine life.
+</p>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+
+</p>
+
+## Features
+- **Real-time gameplay**: cursor tracking, dash, magnet, boss, enemies, and feedback particles.
+- **Game modes**: Normal, Endless, Time Attack.
+- **Random events**: storm, blood thirst, tide, bioluminescent plankton, murky water, surprise attack.
+- **Skins & Aquarium**: shop, NEW badges, equipment, rarities.
+- **Advanced options**: boss speed multiplier, time, visual toggles (parallax, caustics, swimmers).
+- **Mobile**: virtual joystick, adaptive HUD, reduced performance mode..
+
+## Tech Stack
 - **HTML5 / CSS3 / JavaScript ES6**
 - **Firebase (Firestore + Analytics)** pour la sauvegarde et le leaderboard
 - **localStorage** pour la persistance client
@@ -19,12 +41,12 @@ Jeu web 2D en JavaScript (DOM) avec boucles d’animation temps réel, événeme
 ## Structure
 - [index.html](index.html) : structure et UI
 - [styles.css](styles.css) : styles, animations, UI responsive
-- [app.js](app.js) : logique de jeu
+- [app.js](app.js) : game logic
 - [firebase.js](firebase.js) : API Firebase
 - [assets/](assets/) : images et sprites
 
-## Sécurité Firebase
-La config Firebase n’est pas versionnée. Un fichier `firebase.config.js` (non commité) :
+## Firebase Security
+The Firebase config is not version-controlled. An (uncommitted) firebase.config.js file:
 
 ```js
 window.__FIREBASE_CONFIG__ = {
@@ -38,22 +60,22 @@ window.__FIREBASE_CONFIG__ = {
 };
 ```
 
-## ▶Lancer en local
-- Ouvrir [index.html](index.html) avec un serveur local (Live Server conseillé)
-- URL typique : `http://localhost:5500/`
+## ▶Run Locally
+- Open index.html with a local server (Live Server recommended)
+- Typical URL: `http://localhost:5500/`
 
-## Notes techniques
+## Technical Notes
 - **Event loop** : `requestAnimationFrame`
-- **Pooling** : bulles et swimmers recyclés
-- **Pause auto** : onglet inactif + options
+- **Pooling** : bubbles and swimmers recyclés
+- **Auto-pause**: inactive tab + options
 - **Z-index** : overlays contrôlés pour éviter conflits UI
 
-## Détails dev (tech)
-- **État global** : variables runtime centralisées (score, timer, boss, events)
-- **Systèmes** : spawns séparés (food/bonus/malus/power) + handlers dédiés
-- **Input** : souris + touch + joystick virtuel (mobile)
-- **Perf** : `contain`, `will-change`, `content-visibility`, et timers limités
-- **Persistance** : `localStorage` (options/skins) + Firestore (scores)
+## Dev Details (technical)
+- **Global state**: centralized runtime variables (score, timer, boss, events)
+- **Systems**: separate spawns (food/bonus/malus/power) + dedicated handlers
+- **Input**: mouse + touch + virtual joystick (mobile)
+- **Perf**: `contain`, `will-change`, `content-visibility`, and throttled timers
+- **Persistence**: `localStorage` (options/skins) + Firestore (scores)
 
 ## Diagramme (architecture)
 ```mermaid
@@ -91,7 +113,11 @@ sequenceDiagram
   State->>FX: clearEffects()
   State->>UI: hideNotification()
 ```
+<div align="center">
 
+## 🐟 Eat • Grow • Evolve
+
+Made with ❤️ by **Enzo SCH**
+
+</div>
 ---
-
-Auteur : EnzoSCH1

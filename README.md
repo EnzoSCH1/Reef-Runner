@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="gamefishbanner.png" alt="GameFish Banner" width="100%">
+  <img src="reefrunnerbanner.png" alt="GameFish Banner" width="100%">
 </p>
 
 <h1 align="center">🐟 Reef Runner</h1>
